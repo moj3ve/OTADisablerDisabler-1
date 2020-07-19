@@ -6,7 +6,7 @@ include $(THEOS)/makefiles/common.mk
 
 TOOL_NAME = removeota
 
-removeota_FILES = main.m
+removeota_FILES = $(wildcard Tool/*.m)
 removeota_CFLAGS = -fobjc-arc
 removeota_CODESIGN_FLAGS = -Sentitlements.plist
 removeota_INSTALL_PATH = /usr/local/bin
